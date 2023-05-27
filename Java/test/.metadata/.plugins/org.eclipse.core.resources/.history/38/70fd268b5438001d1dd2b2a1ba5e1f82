@@ -1,0 +1,10 @@
+package test;
+
+public class hello {
+	
+	private String name;
+	
+	public hello(String name) {
+		this.name = name;
+	}
+}

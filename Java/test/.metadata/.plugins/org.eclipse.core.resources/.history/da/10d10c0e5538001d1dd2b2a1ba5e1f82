@@ -1,0 +1,10 @@
+package test;
+
+public class helloStatic {
+	
+	hello x = new hello("test name");
+	
+	public static String greet() {
+		return x.getName();
+	}
+}
