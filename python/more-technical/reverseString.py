@@ -17,3 +17,5 @@ def reverseString(str):
         left += str[start]
     
     return left + right
+
+print(reverseString("hello"))
