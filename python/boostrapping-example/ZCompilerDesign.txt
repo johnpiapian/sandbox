@@ -1,0 +1,30 @@
+```
+I was trying to create a simple custom programming language.
+After trying to do it a quick and dirty way, I found that it is tricky as it gets
+very complicated very fast. So, if I were serious about creating my own programming
+langauge, I would follow proper parsing techniques and etc as you would in a CS class.
+
+The following link provides a formal guideline:
+https://pgrandinetti.github.io/compilers/page/how-to-build-a-new-programming-language/
+```
+
+
+# variable
+@x is 10.
+@y is 20.
+
+# arithmetic
+@z is add(@x, add(@y, @y)).
+@z is mul(@x, sub(@y, 5)).
+
+# displaying
+show @z
+
+# condition
+if @z < @x: show @z, or @z > @x: show @x, or show "nothing".
+
+# loop
+while @z > 0: @z is sub(@z, 1), show @z.
+
+# functions
+double(@a, @b): return sub(@a, b).
