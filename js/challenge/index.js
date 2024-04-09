@@ -1,6 +1,7 @@
 "use strict";
 
 function assert(result, expected) {
+    // Success case
     if (typeof result === typeof expected) {
 
         function isEqualArray(expected, result, index = 0) {
@@ -21,6 +22,7 @@ function assert(result, expected) {
         }
     }
 
+    // Error case
     if (Array.isArray(result)) {
         console.error(`Error: Expected: [${expected}] \n\t-> Result: [${result}]\n`);
     } else {
