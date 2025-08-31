@@ -4,7 +4,7 @@ import time
 HOST = '127.0.0.1'
 PORT = 3000
 
-type Headers = list[(str, str)]
+type Headers = list[tuple[str, str]]
 type Body = str
 
 def http_response(headers: Headers, body: Body) -> str:
@@ -41,6 +41,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
                 ],
                 ("Hello, World!\nThis is a simple HTTP server.\n"),
             )
+
             conn.sendall(response.encode('utf-8'))
 
             print(f"Response to: {addr}")
